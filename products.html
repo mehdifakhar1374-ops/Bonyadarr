@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>کلکسیون و محصولات | آتلیه معماری مونولیت</title>
+  <meta name="description" content="کاتالوگ کامل پنت‌هاوس‌ها، ویلاهای بازالت، عمارت‌های حیاط‌مرکزی و پروژه‌های آف‌مارکت آتلیه مونولیت با امکان سفارش مستقیم در تلگرام." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-mark">
+        <span>مونولیت</span>
+        <span class="brand-latin">MONOLITH</span>
+      </a>
+
+      <nav class="main-nav" aria-label="منوی اصلی">
+        <a href="index.html" class="nav-link">خانه</a>
+        <a href="products.html" class="nav-link is-active">کلکسیون و محصولات</a>
+        <a href="about.html" class="nav-link">درباره آتلیه</a>
+        <a href="contact.html" class="nav-link">تماس و مشاوره</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="cart-trigger" data-open-drawer aria-label="باز کردن فهرست سفارش تلگرام">
+          <span>سفارش تلگرام</span>
+          <span class="cart-count" data-cart-count>۰</span>
+        </button>
+        <button type="button" id="mobile-menu-open" class="mobile-menu-btn" aria-label="باز کردن منو">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-drawer" class="mobile-drawer" aria-label="منوی موبایل">
+    <div>
+      <div class="mobile-drawer-header">
+        <span class="brand-mark"><span>مونولیت</span><span class="brand-latin">MONOLITH</span></span>
+        <button type="button" id="mobile-menu-close" class="modal-close" aria-label="بستن منو">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <nav class="mobile-drawer-links">
+        <a href="index.html" class="mobile-drawer-link"><span>خانه</span><span>۰۱</span></a>
+        <a href="products.html" class="mobile-drawer-link is-active"><span>کلکسیون و محصولات</span><span>۰۲</span></a>
+        <a href="about.html" class="mobile-drawer-link"><span>درباره آتلیه</span><span>۰۳</span></a>
+        <a href="contact.html" class="mobile-drawer-link"><span>تماس و مشاوره</span><span>۰۴</span></a>
+      </nav>
+    </div>
+    <div style="border-top:1px solid var(--hairline-graphite);padding-top:1.5rem;">
+      <a href="https://t.me/monolith_atelier" target="_blank" rel="noopener noreferrer" class="btn-monument" style="width:100%;">گفت‌وگو در تلگرام آتلیه</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">خانه</a>
+          <span aria-hidden="true">/</span>
+          <span style="color:var(--champagne-gold);">کلکسیون و محصولات</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:2rem;">
+          <div>
+            <span class="section-eyebrow">CURATED RESIDENCES &amp; BESPOKE COMMISSIONS</span>
+            <h1 class="section-title" style="font-size:clamp(2rem,3.6vw,3.25rem);">کلکسیون آثار معماری و املاک مونولیت</h1>
+          </div>
+          <p class="section-desc">
+            آثار مورد نظر خود را بررسی کنید، جزئیات متریال و متراژ را بخوانید و مستقیماً از طریق سبد سفارش تلگرام، پرونده و بازدید اختصاصی را رزرو نمایید.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Catalog -->
+    <section class="section-space">
+      <div class="container">
+        <!-- Filter & Search Bar -->
+        <div class="filter-toolbar" aria-label="فیلتر و جست‌وجو در کلکسیون">
+          <div class="filter-tabs" role="tablist" aria-label="دسته‌بندی پروژه‌ها">
+            <button type="button" class="filter-tab is-active" data-filter-category="all">همه آثار</button>
+            <button type="button" class="filter-tab" data-filter-category="penthouse">پنت‌هاوس‌ها</button>
+            <button type="button" class="filter-tab" data-filter-category="villa">ویلاهای کوهستانی</button>
+            <button type="button" class="filter-tab" data-filter-category="courtyard">عمارت حیاط‌مرکزی</button>
+            <button type="button" class="filter-tab" data-filter-category="offmarket">آف‌مارکت و سفارشی</button>
+          </div>
+
+          <div class="filter-controls">
+            <div style="min-width:220px;">
+              <input id="catalog-search" type="search" class="hairline-input" style="padding:0.45rem 0;font-size:0.88rem;" placeholder="جست‌وجو نام، کد یا محله..." aria-label="جست‌وجو در پروژه‌ها" />
+            </div>
+            <div>
+              <select id="catalog-sort" class="hairline-select" aria-label="مرتب‌سازی آثار">
+                <option value="default">مرتب‌سازی: پیشنهاد آتلیه</option>
+                <option value="price-desc">ارزش: بیشترین به کمترین</option>
+                <option value="price-asc">ارزش: کمترین به بیشترین</option>
+                <option value="area-desc">مساحت: بزرگ‌ترین زیربنا</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.75rem;">
+          <span id="catalog-result-count" style="font-size:0.85rem;color:var(--text-muted);" class="tabular-nums">نمایش ۶ اثر معماری</span>
+          <button type="button" class="text-link-cta" data-open-drawer>
+            <span>مشاهده فهرست سفارش تلگرام (<span data-cart-count>۰</span>)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </button>
+        </div>
+
+        <div id="catalog-projects-grid" class="portfolio-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-mark" style="margin-bottom:1.25rem;">
+            <span>مونولیت</span>
+            <span class="brand-latin">MONOLITH</span>
+          </a>
+          <p style="margin:0;max-width:38ch;font-size:0.9rem;color:var(--text-muted);line-height:1.85;">
+            آتلیه طراحی، ساخت و سرمایه‌گذاری املاک معماری فاخر. خلق فضاهای مونولیتیک با هویت سنگ خام و طلای شامپاینی.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">ناوبری صفحات</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">صفحه نخست</a></li>
+            <li><a href="products.html">کلکسیون و محصولات</a></li>
+            <li><a href="about.html">درباره آتلیه</a></li>
+            <li><a href="contact.html">تماس و مشاوره</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">سفارش تلگرام</h4>
+          <ul class="footer-links">
+            <li><a href="https://t.me/monolith_atelier" target="_blank" rel="noopener noreferrer">رزرو بازدید حضوری</a></li>
+            <li><a href="https://t.me/monolith_atelier" target="_blank" rel="noopener noreferrer">دریافت پلان و اسناد فنی</a></li>
+            <li><a href="contact.html">مشاوره سرمایه‌گذاری ارزی</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">دفاتر و ارتباط مستقیم</h4>
+          <ul class="footer-links">
+            <li><span>تهران، الهیه، خیابان فرشته، پلاک ۴۲</span></li>
+            <li><span class="tabular-nums">تلفن: ۰۲۱-۲۶۲۰۴۸۹۰</span></li>
+            <li><a href="https://t.me/monolith_atelier" target="_blank" rel="noopener noreferrer" style="color:var(--champagne-gold);">تلگرام: @monolith_atelier</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© ۱۴۰۵ آتلیه معماری و سرمایه‌گذاری مونولیت — تمامی حقوق محفوظ است.</span>
+        <span class="latin-serif" style="letter-spacing:0.14em;color:var(--champagne-gold);">MONUMENTAL OBSIDIAN &amp; CHAMPAGNE GOLD</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
